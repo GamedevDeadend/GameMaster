@@ -1,2 +1,5 @@
-/.env
-/.venv
+.env
+.venv/
+resources/embeddings/
+__pycache__/
+*.pyc
