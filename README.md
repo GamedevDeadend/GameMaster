@@ -1,3 +1,14 @@
+---
+title: Veildark Game Master
+emoji: ⚔️
+colorFrom: gray
+colorTo: red
+sdk: gradio
+sdk_version: 5.0.0
+app_file: app.py
+pinned: false
+---
+
 # ⚔️ Veildark Game Master — AI-Powered RPG Narrator
 
 > *"You stand at the edge of a dying world. The Bleed grows. Ask your questions, traveller — if you dare."*
