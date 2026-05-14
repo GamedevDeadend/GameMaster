@@ -2,4 +2,4 @@
 .venv/
 resources/embeddings/
 __pycache__/
-*.pyc
+*.pycresources/GameLore_Resource.pdf
