@@ -19,8 +19,8 @@ embeddings = HuggingFaceEmbeddings(
 cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
 
 BASE_DIR = os.path.dirname( os.path.dirname(os.path.abspath(__file__)) )
-PATH_EMBEDDINGS = os.path.join(BASE_DIR, "resources\embeddings")
-PATH_PDF = os.path.join(BASE_DIR, "resources\GameLore_Resource.pdf")
+PATH_EMBEDDINGS = os.path.join(BASE_DIR, "resources", "embeddings")
+PATH_PDF = os.path.join(BASE_DIR, "resources", "GameLore_Resource.pdf")
 
 
 def get_vectorstore():
