@@ -1,13 +1,18 @@
 
 import gradio as gr
 import uvicorn
+import argparse
 
 from core.gm_agent import init_agent
 from gm_mcp.gm_mcp_server import mcp
 from ui.gm_ui import web_app
 from api.gm_api import app as fast_app
 
-MODE = "fastapi"  # Options: "gradio", "fastapi", "mcp_local", "mcp_remote"
+parser = argparse.ArgumentParser()
+parser.add_argument("--mode", choices=["gradio", "fastapi", "mcp_local", "mcp_remote"], default="gradio")
+args = parser.parse_args()
+
+MODE = args.mode  # Options: "gradio", "fastapi", "mcp_local", "mcp_remote"
 
 if __name__ == "__main__":
     init_agent()

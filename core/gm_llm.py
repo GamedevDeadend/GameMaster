@@ -7,5 +7,5 @@ from dotenv import load_dotenv
 load_dotenv()  # Load environment variables from .env file
 api_key = os.getenv("GROQ_API_KEY")
 
-llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.7, max_tokens=1024, api_key=api_key)
+llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0.7, max_tokens=1024, api_key=api_key)
 
