@@ -3,3 +3,4 @@
 resources/embeddings/
 __pycache__/
 *.pycresources/GameLore_Resource.pdf
+assets/*.png
